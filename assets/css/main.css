@@ -2556,6 +2556,12 @@ input, select, textarea {
 
 /* Image */
 
+@media only screen and (max-width: 750px) {
+	 .image{
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+	}
+}
 	.image {
 		border-radius: 0.25em;
 		border: 0;
@@ -3923,6 +3929,12 @@ input, select, textarea {
     padding: 1% 2%;
     margin-bottom: 1%;
 }
+@media only screen and (max-width: 600px) {
+	.skill-cat .responsive-img {
+		width: 140px !important;
+		height: 140px !important;
+	}
+}
 .skill-cat .responsive-img{
     width: 200px;
     height: 200px;
@@ -4262,7 +4274,6 @@ background-position: -10px 0, -10px 0, 0 0, 0 0;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-  
 }
 
 @media (min-width: 48em) {
@@ -4287,8 +4298,11 @@ background-position: -10px 0, -10px 0, 0 0, 0 0;
 	cursor: pointer;
 	opacity: 0.7;
 	background-size: contain !important;
+	background-position-x: center;
 	background-repeat: no-repeat !important;
+	background-position: center !important;
 	height: 238px;
+	margin: 5%;
 }
 .proj-container:hover{
 	border-image: linear-gradient(to right, #9F4787, #5F42A6) 1;
@@ -4371,6 +4385,7 @@ background-position: -10px 0, -10px 0, 0 0, 0 0;
 		.proj-container{
 			height: 100%;
 			max-height: 100%;
+			margin: 5%;
 		}
 		.projects .mybtn{
 			padding: 0;
