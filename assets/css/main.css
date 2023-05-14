@@ -3936,8 +3936,8 @@ input, select, textarea {
 	}
 }
 .skill-cat .responsive-img{
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
 	border-radius: 100%;
 }
 .responsive-img{
