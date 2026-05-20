@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Zain Alabdeen Khartabil | Software Engineer",
   description: "Software engineering portfolio of Zain Alabdeen Khartabil, a specialist in .NET and Full Stack Development.",
   icons: {
-    icon: "/zk.jpg",
+    icon: "/zk.png",
   },
 };
 

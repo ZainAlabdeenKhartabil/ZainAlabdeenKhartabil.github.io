@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import dynamic from "next/dynamic";
@@ -15,9 +16,22 @@ const Avatar3D = dynamic(() => import("@/components/Avatar3D"), {
 });
 
 export default function Hero() {
+  const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    setIsLargeScreen(mediaQuery.matches);
+
+    const handleResize = (e: MediaQueryListEvent) => setIsLargeScreen(e.matches);
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
   return (
     <section id="hero" className="min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-4 relative overflow-hidden bg-[#020617]">
-      {/* Background Text */}
+
       <div className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none z-0">
         <h2 className="text-[28vw] font-black text-white/[0.015] uppercase leading-none select-none blur-[4px] tracking-tight">
           ZAIN
@@ -26,7 +40,6 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto w-full flex flex-col items-center justify-center relative z-10 gap-2">
 
-        {/* Top Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,28 +51,35 @@ export default function Hero() {
           </h1>
         </motion.div>
 
-        {/* Massive Avatar - Truly High Impact */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative w-full h-[350px] sm:h-[500px] lg:h-[650px] max-w-[1200px] flex justify-center z-10 pointer-events-auto"
+          className="relative w-full h-[120px] sm:h-[180px] lg:h-[650px] max-w-[1200px] flex justify-center z-10 pointer-events-auto transition-all duration-300"
         >
           <div className="w-full h-full relative">
-            <Avatar3D />
+            {isLargeScreen ? (
+              <Avatar3D />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <img
+                  src="Avatar.png"
+                  alt="Avatar"
+                  className="w-full h-full object-contain select-none"
+                />
+              </div>
+            )}
           </div>
 
-          {/* Ambient Lighting / Glows */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[100%] h-[40%] bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10" />
         </motion.div>
 
-        {/* Bottom Details */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="flex flex-col items-center text-center gap-10 mt-8"
+          className="flex flex-col items-center text-center gap-10 mt-4 lg:mt-8"
         >
           <div className="space-y-4">
             <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-200 h-[1.5em] tracking-tight overflow-hidden">
@@ -70,17 +90,21 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-8 pt-4">
-            <a href="#contact" className="px-10 py-5 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-black transition-all hover:scale-105 hover:-translate-y-1 flex items-center gap-3 shadow-2xl shadow-blue-900/40">
-              Let's Talk <ArrowRight className="w-6 h-6" />
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8 pt-4">
+            <a
+              href="#contact"
+              className="px-6 py-3.5 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-xl sm:rounded-2xl bg-blue-600 hover:bg-blue-500 text-white text-sm sm:text-base font-bold lg:font-black transition-all hover:scale-105 hover:-translate-y-0.5 lg:hover:-translate-y-1 flex items-center gap-2 sm:gap-3 shadow-xl lg:shadow-2xl shadow-blue-900/40"
+            >
+              Let's Talk <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
             </a>
             <a
               href="/ZainAlabdeenKhartabilCV.pdf"
               download="ZainAlabdeenKhartabilCV.pdf"
               target="_blank"
               rel="noreferrer"
-              className="px-10 py-5 rounded-2xl glass-panel hover:bg-slate-800/80 text-slate-100 font-black transition-all hover:scale-105 hover:-translate-y-1 flex items-center gap-3 border border-slate-700/50 shadow-xl">
-              Get Resume <Download className="w-6 h-6" />
+              className="px-6 py-3.5 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-xl sm:rounded-2xl glass-panel hover:bg-slate-800/80 text-slate-100 text-sm sm:text-base font-bold lg:font-black transition-all hover:scale-105 hover:-translate-y-0.5 lg:hover:-translate-y-1 flex items-center gap-2 sm:gap-3 border border-slate-700/50 shadow-lg lg:shadow-xl"
+            >
+              Get Resume <Download className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
             </a>
           </div>
         </motion.div>
