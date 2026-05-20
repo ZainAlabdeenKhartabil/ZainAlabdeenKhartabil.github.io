@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Hi, I'm Zain Alabdeen Khartabil
 
-## Getting Started
+### Full-Stack Software Engineer | .NET Specialist
 
-First, run the development server:
+A **Software Engineer** with **5+ years of experience** specializing in building high-performance, scalable web and desktop applications. Expert in designing robust backend systems with the .NET ecosystem and crafting modern, maintainable user experiences using cutting-edge frontend frameworks. Guided by **Clean Architecture**, **SOLID principles**, and **Domain-Driven Design (DDD)**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technical Arsenal
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Layer | Technologies |
+| :--- | :--- |
+| **Backend & Core** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white) ![.NET Core](https://img.shields.io/badge/.NET%20Core-512BD4?style=flat-square&logo=.net&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white) |
+| **Frontend** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white) ![Blazor](https://img.shields.io/badge/Blazor-512BD4?style=flat-square&logo=blazor&logoColor=white) ![.NET MAUI](https://img.shields.io/badge/.NET%20MAUI-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white) |
+| **Databases** | ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-00758F?style=flat-square&logo=mysql&logoColor=white) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
+| **Architecture** | `Clean Architecture` `Microservices` `Domain-Driven Design (DDD)` `SOLID Principles` |
+| **Cloud & DevOps** | ![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) `Azure DevOps` `CI/CD Pipelines` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💼 Professional Experience
 
-To learn more about Next.js, take a look at the following resources:
+#### 💻 Freelance | Web Developer 
+*March 2020 — Present*
+* Architected and delivered multiple tailor-made enterprise web applications using **ASP.NET Core** and **C#** to fulfill distinct client business workflows.
+* Engineered responsive, highly intuitive user interfaces using **React**, **Angular**, **Bootstrap**, and vanilla JavaScript variants.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 🏥 GlobalLogic | Middle Software Engineer (Bucharest, Romania)
+*February 2023 — February 2024*
+* Engineered complex healthcare software solutions built on top of high-performance **.NET technologies**.
+* Implemented decoupled desktop and mobile client interfaces with **WPF** and **MAUI** leveraging **XAML** and the **MVVM** pattern.
+* Successfully integrated innovative security bio-features including face and voice recognition capabilities.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### 🌐 Sham Innovation SRL | Full Stack Web Developer 
+*November 2020 — December 2021*
+* End-to-end architecture of 3 massive enterprise-grade web platforms implementing **.NET** backend systems paired with **Blazor** and **Angular** single-page frontends.
+* Supervised full Software Development Life Cycle (SDLC) pipelines encompassing early phase planning, unit testing, and post-launch maintenance cycles.
 
-## Deploy on Vercel
+#### 🛠️ Madarat Ideal Solutions | Full Stack Web Developer 
+*October 2019 — October 2020*
+* Programmed, refactored, and maintained a portfolio of over 5 **.NET web applications**.
+* Delivered flawless execution loops hitting a 100% customer satisfaction rate with zero timeline delays.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Featured Projects
+
+### 📊 ITS Enterprise Resource Planning (ERP)
+A comprehensive ERP suite centralizing corporate pipelines across human resources, asset inventories, and multi-tier accounting sectors.
+* **Key Implementations:** Multi-role dynamic dashboards, real-time balance sheet reports, automated auditing triggers.
+* **Tech Stack:** `.NET Core`, `ASP.NET Core`, `SQL Server`, `Entity Framework (EF)`.
+* **Live Demo:** [itstudios.site](https://itstudios.site/)
+
+---
+
+## 🎓 Education & Certifications
+
+* **BSc in Information Technology Engineering** — Damascus University *(Graduated January 2021)*
+* **Foundations of Project Management** — Google / Coursera *(June 2024)*
+* **Advanced Web APIs with .NET 6** — LinkedIn Learning *(December 2022)*
+* **.NET MAUI Essential Training** — LinkedIn Learning *(December 2022)*
+* **Big Data Analytics** — Griffith University *(March 2021)*
+
+---
+
+## 🌐 Languages & Culture
+
+* **Arabic:** Native
+* **English:** Professional Working Proficiency
+* **Romanian:** Intermediate
+* **German:** Beginner
+
+---
+
+## 📫 Let's Connect!
+
+* **Portfolio:** [ZainAlabdeenKhartabil.github.io](https://ZainAlabdeenKhartabil.github.io/)
+* **LinkedIn:** [linkedin.com/in/ZainAlabdeenKhartabil](https://linkedin.com/in/ZainAlabdeenKhartabil/)
+* **Email:** [ZainAlabdeenKhartabil@gmail.com](mailto:ZainAlabdeenKhartabil@gmail.com)
