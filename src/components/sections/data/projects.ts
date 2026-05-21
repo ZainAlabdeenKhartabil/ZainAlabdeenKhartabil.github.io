@@ -23,6 +23,12 @@ export const projectsData: ProjectItem[] = [
         pptxUrl: "/projects/ASA.pptx"
     },
     {
+        title: "Centenario",
+        description: "A clean, dynamic web experience dedicated to the engineering and legacy of the Lamborghini Centenario.",
+        imageSrc: "/projects/Centenario.png",
+        link: "https://zainalabdeenkhartabil.github.io/Centenario/"
+    },
+    {
         title: "Movies App",
         description: "A dynamic, responsive film discovery application that allows users to instantly search and explore up-to-the-minute trending cinema.",
         imageSrc: "/projects/MoviesApp.png",
