@@ -44,5 +44,11 @@ export const projectsData: ProjectItem[] = [
             { url: "/projects/ZSearch.mp4", type: 'video' }
         ],
         pptxUrl: "/projects/ZSearch.pptx"
-    }
+    },
+    {
+        title: "Black Roast Coffee",
+        description: "A modern, dark-themed coffee e-commerce app that lets users browse, shop, and manage a cart using mock data in a smooth, responsive interface.",
+        imageSrc: "/projects/BlackRoastCoffee.png",
+        link: "https://zainalabdeenkhartabil.github.io/BlackRoastCoffee/"
+    },
 ];
